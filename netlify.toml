@@ -1,13 +1,13 @@
 [build]
-command = "next build && next export"
-publish = "out"
-ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../../"
+  command = "next build && next export"
+  publish = "out"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../../"
 
 [build.environment]
-NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[plugins]]
-package = "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs"
 
 [build]
-publish = ".next"
+  publish = ".next"
